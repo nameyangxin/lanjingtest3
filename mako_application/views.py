@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from django.http import HttpResponse
 from django.shortcuts import render
 
 
@@ -26,5 +25,4 @@ def contact(request):
     """
     return render(request, 'mako_application/contact.mako')
 
-def hello_world(request):
-    return HttpResponse('hello world')
+

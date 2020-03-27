@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from django.http import HttpResponse
 from django.shortcuts import render
 
 
@@ -23,3 +24,7 @@ def contact(request):
     联系页
     """
     return render(request, 'home_application/contact.html')
+
+
+def hello_world(request):
+    return HttpResponse('hello world')
